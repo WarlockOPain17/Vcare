@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<title>
+Health
+</title>
+<head>
+<body background="Zombie.jpg";style="font-family:vendetta;">
+<p align="center">
+<font size=18"> 
+<marquee style="font-family:vendetta;">
+<br/>
+Welcome to VCare. What do you want to do? 
+</marquee>
+
+<hr>
+</font>
+</p>
+<br/><br/><br/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript">
+function whichsite(form){
+	var sites = form.elements.site, i = sites.length;
+	while (--i > -1){
+		if(sites[i].checked){
+			return sites[i].value;
+		}
+	}
+}
+</script>
+</head>
+<form action="#" onsubmit="window.open(whichsite(this), '_blank'); return false;">
+<font color="Salmon" size="18" >
+<p align="center">
+Please Select:<br/></p>
+<p align="center">
+<input type = "radio" name = "site" value = "Health%20status.html"> Health Status<br/>
+         <input type = "radio" name = "site" value = "relaxation%20music.html"> Relaxation Music<br/>
+<input type = "radio" name = "site" value = "Expert Help"> Expert Help<br/><br/><br/>
+</p><p align="center">
+<input type="submit" value="Submit" style="padding:20px; font-size:30px">
+
+</a>
+<button style="padding:20px; font-size:30px"> <a href = "After%20login.html" target = "_self">Go back</a>
+</button>
+</p>
+</form>
+</p>
+<p align="center">
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<button style="padding:20px; font-size:30px"> <a href = "Health.html" target = "_self">Health</a>
+</button>
+<button style="padding:20px; font-size:30px"> <a href = "Communication.html" target = "_self">Communication</a>
+</button>
+<button style="padding:20px; font-size:30px"> <a href = "Resources.html" target = "_self">Resources</a>
+</button>
+<button style="padding:20px; font-size:30px"> <a href = "Tips.html" target = "_self">Tips</a>
+</button>
+<button style="padding:20px; font-size:30px"> <a href = "VPL.html" target = "_self">VPL</a>
+</button>
+</p>
+</body>
+
+</head>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head><marquee style="font-family:vendetta;">
+<br/><font size="18">
+Welcome to VCare. What do you want to do? 
+</marquee>
+
+<hr>
+</font>
+</p>
+<br/><br/><br/>
+    <style>
+      #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body style="background-color:crimson;font-family: "Times New Roman", Times, serif;"> 
+    <h3>You are here</h3>
+    <div id="map"></div>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>here</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 12.9708, lng: 79.1595};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjWkPzEefGAtoATaidN7hd0aiZFeQVm8o &callback=initMap">
+    </script>
+<p align="center">
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<button style="padding:20px; font-size:30px"> <a href = "Health.html" target = "_self">Health</a>
+</button>
+<button style="padding:20px; font-size:30px"> <a href = "Communication.html" target = "_self">Communication</a>
+</button>
+<button style="padding:20px; font-size:30px"> <a href = "Resources.html" target = "_self">Resources</a>
+</button>
+<button style="padding:20px; font-size:30px"> <a href = "Tips.html" target = "_self">Tips</a>
+</button>
+<button style="padding:20px; font-size:30px"> <a href = "VPL.html" target = "_self">VPL</a>
+</button>
+</p>
+  </body>
+</html>
